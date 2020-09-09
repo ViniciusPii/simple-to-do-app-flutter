@@ -14,13 +14,22 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        home: Home());
+        home: HomePage());
   }
 }
 
-class Home extends StatelessWidget {
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Todo List"),
+      ),
+      body: Container(
+        child: Center(
+          child: Text("Olá Mundo"),
+        ),
+      ),
+    );
   }
 }
